@@ -11,4 +11,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## MCPs
 
-- Playwright Screenshots y cualquier cosa relacionada a Playwright tienen que estar en la carpeta. playwright-ncp. 
+- Playwright Screenshots y cualquier cosa relacionada a Playwright tienen que estar en la carpeta. playwright-mcp. 
