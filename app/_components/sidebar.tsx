@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ComponentType } from "react";
 import { CLASSROOM, NAV_ITEMS, type NavIcon } from "@/app/_data/classroom";
-import { BellIcon, HomeIcon, KidsIcon, LogOutIcon, PlusIcon, SunIcon, UserIcon } from "./icons";
+import { BellIcon, HomeIcon, KidsIcon, PlusIcon, SunIcon, UserIcon } from "./icons";
 import { TeacherBlock } from "./teacher-block";
 
 const NAV_ICONS: Record<NavIcon, ComponentType<{ readonly className?: string }>> = {
