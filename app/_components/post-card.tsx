@@ -31,6 +31,7 @@ export function PostCard({ post }: PostCardProps) {
           </span>
         </span>
       </header>
+      
       <p className="mb-2.5 text-[12.5px] text-mute-soft">{post.audience}</p>
       <p className="text-[15.5px] leading-[1.55] text-body">{post.text}</p>
       {post.photo ? (
