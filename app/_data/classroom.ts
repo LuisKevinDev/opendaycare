@@ -15,8 +15,8 @@ export const CLASSROOM = {
 } as const;
 
 export const NAV_ITEMS: readonly NavItem[] = [
-  { label: "Feed", href: "/", icon: "home" },
-  { label: "Niños", href: "/ninos", icon: "kids" },
-  { label: "Avisos", href: "/avisos", icon: "bell" },
-  { label: "Mi cuenta", href: "/mi-cuenta", icon: "user" },
+  { label: "Feed", href: "/feed", icon: "home" },
+  { label: "Niños", href: "/kids", icon: "kids" },
+  { label: "Avisos", href: "/notices", icon: "bell" },
+  { label: "Mi cuenta", href: "/account", icon: "user" },
 ] as const;

@@ -1,15 +1,8 @@
 import Link from "next/link";
-import type { ComponentType } from "react";
-import { CLASSROOM, NAV_ITEMS, type NavIcon } from "@/app/_data/classroom";
-import { BellIcon, HomeIcon, KidsIcon, PlusIcon, SunIcon, UserIcon } from "./icons";
+import { CLASSROOM, NAV_ITEMS } from "@/app/_data/classroom";
+import { PlusIcon, SunIcon } from "./icons";
 import { TeacherBlock } from "./teacher-block";
-
-const NAV_ICONS: Record<NavIcon, ComponentType<{ readonly className?: string }>> = {
-  home: HomeIcon,
-  kids: KidsIcon,
-  bell: BellIcon,
-  user: UserIcon,
-};
+import { NavLink } from "./nav-link";
 
 export function Sidebar() {
   return (
@@ -31,23 +24,9 @@ export function Sidebar() {
         Nueva publicación
       </Link>
       <nav className="flex flex-1 flex-col gap-1">
-        {NAV_ITEMS.map((item) => {
-          const Icon = NAV_ICONS[item.icon];
-          const isActive = item.href === "/";
-
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`flex items-center gap-3 rounded-xl px-3 py-[11px] text-[14.5px] ${
-                isActive ? "bg-nav-active font-extrabold text-eyebrow" : "font-semibold text-[#6E6359]"
-              }`}
-            >
-              <Icon className="size-[19px]" />
-              {item.label}
-            </Link>
-          );
-        })}
+        {NAV_ITEMS.map((item) => (
+          <NavLink key={item.href} item={item} />
+        ))}
       </nav>
       <TeacherBlock />
     </aside>
