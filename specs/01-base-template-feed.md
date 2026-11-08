@@ -128,22 +128,22 @@ Badges por tipo: logro `#CFEBD8` + `#3E9B6C`; actividad `#C7E7F1` + `#2E89A6`; a
 
 ## 6. Criterios de aceptación
 
-- [ ] `npm run build` termina sin errores ni warnings de validación de `cacheComponents`.
-- [ ] `npx tsc --noEmit` pasa.
-- [ ] `npm run lint` no reporta ningún archivo nuevo (solo los 2 errores preexistentes de `references/pantallas/support.js`).
-- [ ] `/` muestra exactamente los 3 posts del mockup con sus textos en español, horas, likes (3/5/8) y comentarios (1/2/0).
-- [ ] El sidebar mide 248px en escritorio y el ítem "Feed" usa fondo `#FBE3D8` con texto `#D9583C`.
-- [ ] Fondo, tarjeta y texto coinciden con `#F6ECDF`, `#FFFDF9` y `#3F362E`.
-- [ ] Los títulos usan Fredoka y el cuerpo Nunito (verificable en DevTools → computed font-family).
-- [ ] A 390px el sidebar no es visible, aparece el botón hamburguesa y el drawer abre y cierra.
-- [ ] Los 5 enlaces del sidebar navegan a una página con el shell y no devuelven 404.
-- [ ] No queda ningún `*.svg` de `create-next-app` en `public/`.
-- [ ] El layout no referencia Geist.
-- [ ] No hay dependencias nuevas en `package.json`.
-- [ ] Todo identificador (tipos, props, funciones, variables, nombres de archivo) está en inglés; solo los strings visibles están en español.
-- [ ] Ningún archivo `.tsx`/`.ts` nuevo supera 60 líneas sin partirse.
-- [ ] No hay comentarios en el código nuevo.
-- [ ] Existen capturas en `playwright-mcp/` del home en escritorio y en mobile.
+- [x] `npm run build` termina sin errores ni warnings de validación de `cacheComponents`.
+- [x] `npx tsc --noEmit` pasa.
+- [x] `npm run lint` no reporta ningún archivo nuevo (solo los 2 errores preexistentes de `references/pantallas/support.js`).
+- [x] `/` muestra exactamente los 3 posts del mockup con sus textos en español, horas, likes (3/5/8) y comentarios (1/2/0).
+- [x] El sidebar mide 248px en escritorio y el ítem "Feed" usa fondo `#FBE3D8` con texto `#D9583C`.
+- [x] Fondo, tarjeta y texto coinciden con `#F6ECDF`, `#FFFDF9` y `#3F362E`.
+- [x] Los títulos usan Fredoka y el cuerpo Nunito (verificable en DevTools → computed font-family).
+- [x] A 390px el sidebar no es visible, aparece el botón hamburguesa y el drawer abre y cierra.
+- [x] Los 5 enlaces del sidebar navegan a una página con el shell y no devuelven 404.
+- [x] No queda ningún `*.svg` de `create-next-app` en `public/`.
+- [x] El layout no referencia Geist.
+- [x] No hay dependencias nuevas en `package.json`.
+- [x] Todo identificador (tipos, props, funciones, variables, nombres de archivo) está en inglés; solo los strings visibles están en español.
+- [x] Ningún archivo `.tsx`/`.ts` nuevo supera 60 líneas sin partirse.
+- [x] No hay comentarios en el código nuevo.
+- [x] Existen capturas en `playwright-mcp/` del home en escritorio y en mobile.
 
 ## 7. Decisiones tomadas y descartadas
 

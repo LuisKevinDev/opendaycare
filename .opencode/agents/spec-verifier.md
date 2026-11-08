@@ -1,7 +1,7 @@
 ---
 description: Verifica los criterios de aceptación de un spec (build, TS, lint, Next 16, Playwright vs. mockups) y marca los checks
 mode: all
-model: opencode/qwen3.6-plus
+model: opencode-go/qwen3.7-plus
 steps: 60
 color: "#EE8164"
 permissions:
